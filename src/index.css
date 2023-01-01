@@ -1,13 +1,63 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/img1.jpg);
+}
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.calculator {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  overflow: hidden;
+}
+.display {
+  padding: 17px;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: rgb(0, 0, 42);
+  color: aliceblue;
+}
+.display span {
+  font-size: 16px;
+  color: bisque;
+}
+button {
+  cursor: pointer;
+
+  appearance: none;
+  outline: none;
+  transition: 0.5s;
+  padding: 16px;
+  font-size: 20px;
+}
+button:hover {
+  opacity: 0.9s;
+  background-color: brown;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.operators {
+  display: flex;
+}
+.operators button {
+  flex: 1 1 0%;
+  background-color: rgb(255, 166, 0);
+  font-weight: 700;
+}
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.digits button {
+  flex: 1 1 33.3%;
+  max-width: 33.33%;
 }
