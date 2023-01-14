@@ -36,7 +36,7 @@ button {
 
   appearance: none;
   outline: none;
-  transition: 0.5s;
+  transition: 0.3s;
   padding: 16px;
   font-size: 20px;
 }
